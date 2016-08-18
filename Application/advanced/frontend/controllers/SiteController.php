@@ -64,6 +64,14 @@ class SiteController extends Controller
             ],
         ];
     }
+	/** 
+	*	Display New Order
+	**/
+
+		public function actionNewOrder()
+	{
+		return $this->render('neworder');
+	}
 
     /**
      * Displays homepage.
@@ -140,6 +148,7 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+	
 
     /**
      * Signs user up.
