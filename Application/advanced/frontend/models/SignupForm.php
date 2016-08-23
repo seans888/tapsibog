@@ -21,7 +21,8 @@ class SignupForm extends Model
      */
     public function rules()
     {
-        return [
+        return 
+		[
             ['username', 'trim'],
             ['username', 'required'],
 			['first_name', 'required'],
