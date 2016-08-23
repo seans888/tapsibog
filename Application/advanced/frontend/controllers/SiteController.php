@@ -179,8 +179,10 @@ class SiteController extends Controller
     public function actionRequestPasswordReset()
     {
         $model = new PasswordResetRequestForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail()) {
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) 
+        {
+            if ($model->sendEmail()) 
+            {
                 Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
 
                 return $this->goHome();
@@ -203,20 +205,40 @@ class SiteController extends Controller
      */
     public function actionResetPassword($token)
     {
-        try {
+        try 
+        {
             $model = new ResetPasswordForm($token);
-        } catch (InvalidParamException $e) {
+        } catch (InvalidParamException $e) 
+        {
             throw new BadRequestHttpException($e->getMessage());
         }
 
-        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
-            Yii::$app->session->setFlash('success', 'New password was saved.');
+        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) 
+        {
+            Yii::$app->session->setFlash('success', "New password was saved.");
 
             return $this->goHome();
         }
 
-        return $this->render('resetPassword', [
+        return $this->render('resetPassword', 
+            [
             'model' => $model,
         ]);
     }
-}
+	public function actionHello()
+	{
+		$name = 'Azir';
+		return $this->render('hello',array('name'=>$name));
+	}
+
+    public function actionUser()
+    {
+        $model=new \app\models\UserForm;
+
+        if($model->load(Yii::$app->request->post()) && $model->validate())
+        {
+            Yii::$app->session->setFlash('success','You have entered the data correctly');
+        }
+            return $this->render('userForm',['model'=>$model]);
+    }
+ }
