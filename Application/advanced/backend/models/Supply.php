@@ -43,7 +43,7 @@ class Supply extends \yii\db\ActiveRecord
             'supp_id' => 'Supply #',
             'supp_name' => 'Supply Name',
             'supp_quantity' => 'Supply Quantity',
-            'supp_weight' => 'Supply Weight(kg)',
+            'supp_weight' => 'Supply Weight(raw item)(kg)',
         ];
     }
 }
