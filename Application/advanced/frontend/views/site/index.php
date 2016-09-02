@@ -14,7 +14,7 @@ $this->title = 'My Yii Application';
 	<br/>
 	<br/>
 	
-        <h1>Tapsibog PoS</h1>
+        <h1>Point of Sale</h1>
 
         <p class="lead">.</p>
 
