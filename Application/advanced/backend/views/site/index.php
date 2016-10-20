@@ -18,7 +18,7 @@ $this->title = 'My Yii Application';
                 <p><a class="btn btn-success" href="http://localhost/advanced/backend/web/index.php?r=inventory%2Fcreate">Enter</a></p>
             </div>
             <div class="col-lg-4">
-                <h2>New Employee</h2>
+                <h2>New Employeee</h2>
 
                 <p><a class="btn btn-success" href="http://localhost/advanced/backend/web/index.php?r=employees%2Findex">Enter</a>
 
