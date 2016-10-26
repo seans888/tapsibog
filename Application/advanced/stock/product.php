@@ -1,5 +1,24 @@
 <?php require_once 'php_action/db_connect.php' ?>
-<?php require_once 'includes/header.php'; ?>
+<?php require_once 'includes/header.php'; 
+
+/*
+<div class="form-group">
+	        	<label for="productImage" class="col-sm-3 control-label">Product Image: </label>
+	        	<label class="col-sm-1 control-label">: </label>
+				    <div class="col-sm-8">
+					    <!-- the avatar markup -->
+							<div id="kv-avatar-errors-1" class="center-block" style="display:none;"></div>							
+					    <div class="kv-avatar center-block">					        
+					        <input type="file" class="form-control" id="productImage" placeholder="Product Name" name="productImage" class="file-loading" style="width:auto;"/>
+					    </div>
+				      
+				    </div>
+	        </div> <!-- /form-group-->	   */
+
+
+
+
+?>
 
 <div class="row">
 	<div class="col-md-12">
@@ -58,7 +77,13 @@
 
 	      	<div id="add-product-messages"></div>
 
-	      	<div class="form-group">
+
+
+
+
+
+
+<div class="form-group">
 	        	<label for="productImage" class="col-sm-3 control-label">Product Image: </label>
 	        	<label class="col-sm-1 control-label">: </label>
 				    <div class="col-sm-8">
@@ -69,8 +94,17 @@
 					    </div>
 				      
 				    </div>
-	        </div> <!-- /form-group-->	     	           	       
+	        </div> <!-- /form-group-->	
 
+
+
+
+
+
+
+
+
+	  
 	        <div class="form-group">
 	        	<label for="productName" class="col-sm-3 control-label">Product Name: </label>
 	        	<label class="col-sm-1 control-label">: </label>
@@ -96,7 +130,7 @@
 	        </div> <!-- /form-group-->	     	        
 
 	        <div class="form-group">
-	        	<label for="brandName" class="col-sm-3 control-label">Brand Name: </label>
+	        	<label for="brandName" class="col-sm-3 control-label">Location: </label>
 	        	<label class="col-sm-1 control-label">: </label>
 				    <div class="col-sm-8">
 				      <select class="form-control" id="brandName" name="brandName">
