@@ -45,7 +45,7 @@
 						<tr>
 							<th style="width:10%;">Photo</th>							
 							<th>Product Name</th>
-							<th>Rate</th>							
+							<th>Price</th>							
 							<th>Quantity</th>
 							<th>Brand</th>
 							<th>Category</th>
@@ -77,12 +77,6 @@
 
 	      	<div id="add-product-messages"></div>
 
-
-
-
-
-
-
 <div class="form-group">
 	        	<label for="productImage" class="col-sm-3 control-label">Product Image: </label>
 	        	<label class="col-sm-1 control-label">: </label>
@@ -94,17 +88,7 @@
 					    </div>
 				      
 				    </div>
-	        </div> <!-- /form-group-->	
-
-
-
-
-
-
-
-
-
-	  
+	        </div> <!-- /form-group-->		  
 	        <div class="form-group">
 	        	<label for="productName" class="col-sm-3 control-label">Product Name: </label>
 	        	<label class="col-sm-1 control-label">: </label>
@@ -122,10 +106,10 @@
 	        </div> <!-- /form-group-->	        	 
 
 	        <div class="form-group">
-	        	<label for="rate" class="col-sm-3 control-label">Rate: </label>
+	        	<label for="rate" class="col-sm-3 control-label">Price: </label>
 	        	<label class="col-sm-1 control-label">: </label>
 				    <div class="col-sm-8">
-				      <input type="text" class="form-control" id="rate" placeholder="Rate" name="rate" autocomplete="off">
+				      <input type="text" class="form-control" id="rate" placeholder="Price" name="rate" autocomplete="off">
 				    </div>
 	        </div> <!-- /form-group-->	     	        
 
@@ -280,7 +264,7 @@
 			        </div> <!-- /form-group-->	        	 
 
 			        <div class="form-group">
-			        	<label for="editRate" class="col-sm-3 control-label">Rate: </label>
+			        	<label for="editRate" class="col-sm-3 control-label">Price: </label>
 			        	<label class="col-sm-1 control-label">: </label>
 						    <div class="col-sm-8">
 						      <input type="text" class="form-control" id="editRate" placeholder="Rate" name="editRate" autocomplete="off">
