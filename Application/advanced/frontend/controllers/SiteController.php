@@ -225,6 +225,10 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+<<<<<<< HEAD
+
+}
+=======
 	public function actionHello()
 	{
 		$name = 'Azir';
@@ -242,3 +246,4 @@ class SiteController extends Controller
             return $this->render('userForm',['model'=>$model]);
     }
  }
+>>>>>>> 3874b29f26447399964dda52807b5a953761cf81
