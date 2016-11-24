@@ -10,6 +10,7 @@ if(isset($_SESSION['userId'])) {
 $errors = array();
 
 if($_POST) {		
+	
 
 
 	$username = $_POST['username'];
