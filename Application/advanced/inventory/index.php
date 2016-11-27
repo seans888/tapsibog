@@ -1,17 +1,15 @@
-<?php
+<?php 
 require_once 'php_action/db_connect.php';
 
 session_start();
 
 if(isset($_SESSION['userId'])) {
-	header('location: http://localhost:9080/stock/dashboard.php');	
+	header('location: http://localhost/advanced/inventory/dashboard.php');	
 }
 
 $errors = array();
 
 if($_POST) {		
-	
-
 
 	$username = $_POST['username'];
 	$password = $_POST['password'];
@@ -41,24 +39,25 @@ if($_POST) {
 				// set session
 				$_SESSION['userId'] = $user_id;
 
-				header('location: http://localhost/stock/dashboard.php');	
+				header('location: http://localhost/advanced/inventory/dashboard.php');	
 			} else{
 				
 				$errors[] = "Incorrect username/password combination";
 			} // /else
 		} else {		
-			$errors[] = "Username doesnot exists";		
+			$errors[] = "Username does not exists";		
 		} // /else
 	} // /else not empty username // password
 	
 } // /if $_POST
-
 ?>
-	
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tapsibog Inventory</title>
+	<title>Stock Management System</title>
+
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 	<!-- bootstrap theme-->
@@ -76,7 +75,9 @@ if($_POST) {
   <script src="assets/jquery-ui/jquery-ui.min.js"></script>
 
   <!-- bootstrap js -->
+  
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</head>
 <body>
 	<div class="container">
 		<div class="row vertical">
@@ -130,3 +131,11 @@ if($_POST) {
 	<!-- container -->	
 </body>
 </html>
+
+
+
+
+
+
+
+	
