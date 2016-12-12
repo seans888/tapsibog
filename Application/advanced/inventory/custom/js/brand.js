@@ -1,18 +1,27 @@
-var manageBrandTable;
+ var manageRawItemTable;
 
+ $(document).ready(function()
+ {
+ 	$("navBrand").addClass('active');
+
+ 	manageRawItemTable = $("#manageRawItemTable").DataTable();
+ });
+
+ /*var manageRawItemTable;
+ 
 $(document).ready(function() {
 	// top bar active
 	$('#navBrand').addClass('active');
 	
 	// manage brand table
-	manageBrandTable = $("#manageBrandTable").DataTable({
-		'ajax': 'php_action/fetchBrand.php',
+	manageRawItemTable = $("#manageRawItemTable").DataTable({
+		'ajax': 'php_action/fetchRawItem.php',
 		'order': []		
 	});
 
 	// submit brand form function
 	$("#submitBrandForm").unbind('submit').bind('submit', function() {
-		// remove the error text
+		// remove the error text 
 		$(".text-danger").remove();
 		// remove the form error
 		$('.form-group').removeClass('has-error').removeClass('has-success');			
@@ -105,7 +114,7 @@ function editBrands(brandId = null) {
 		$('.editBrandFooter').addClass('div-hide');
 
 		$.ajax({
-			url: 'php_action/fetchSelectedBrand.php',
+			url: 'php_action/fetchRawItem.php',
 			type: 'post',
 			data: {brandId : brandId},
 			dataType: 'json',
@@ -212,7 +221,7 @@ function removeBrands(brandId = null) {
 	if(brandId) {
 		$('#removeBrandId').remove();
 		$.ajax({
-			url: 'php_action/fetchSelectedBrand.php',
+			url: 'php_action/fetchRawItem.php',
 			type: 'post',
 			data: {brandId : brandId},
 			dataType: 'json',

@@ -3,9 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<title>Stock Management System</title>
-
+<title>Tapsibog Inventory System</title>
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
 	<!-- bootstrap theme-->
@@ -49,6 +47,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
+    DFKGLJDKFL
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
 
       <ul class="nav navbar-nav navbar-right">        

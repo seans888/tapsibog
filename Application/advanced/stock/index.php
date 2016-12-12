@@ -39,7 +39,7 @@ if($_POST) {
 				// set session
 				$_SESSION['userId'] = $user_id;
 
-				header('location: http://localhost:9080/stock/dashboard.php');	
+				header('location: http://localhost/advanced/stock/dashboard.php');	
 			} else{
 				
 				$errors[] = "Incorrect username/password combination";
