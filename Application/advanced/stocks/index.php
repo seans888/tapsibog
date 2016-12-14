@@ -4,7 +4,7 @@ require_once 'php_action/db_connect.php';
 session_start();
 
 if(isset($_SESSION['userId'])) {
-	header('location: http://localhost/stocks/dashboard.php');	
+	header('location: http://localhost/advanced/stocks/dashboard.php');	
 }
 
 $errors = array();

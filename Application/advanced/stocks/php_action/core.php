@@ -7,7 +7,7 @@ require_once 'db_connect.php';
 // echo $_SESSION['userId'];
 
 if(!$_SESSION['userId']) {
-	header('location: http://localhost/stocks/index.php');	
+	header('location: http://localhost/advanced/stocks/index.php');	
 } 
 
 

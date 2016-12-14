@@ -8,6 +8,6 @@ session_unset();
 // destroy the session 
 session_destroy(); 
 
-header('location: http://localhost/stocks/index.php');
+header('location: http://localhost/advanced/stocks/index.php');
 
 ?>

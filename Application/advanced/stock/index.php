@@ -76,13 +76,13 @@ if($_POST) {
   <!-- bootstrap js -->
 	<script src="assests/bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body>
+
 	<div class="container">
 		<div class="row vertical">
 			<div class="col-md-5 col-md-offset-4">
 				<div class="panel panel-info">
 					<div class="panel-heading">
-						<h3 class="panel-title">Please Sign in</h3>
+						<h3 class="panel-title">Tapsibog Inventory System</h3>
 					</div>
 					<div class="panel-body">
 

@@ -47,18 +47,24 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    DFKGLJDKFL
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+    <a href="http://localhost/advanced/stock/dashboard.php">
+<img alt="logo" src="taplogo.png" style="width:35px;height:40px;" align="left"/>
+</a>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+<a class="navbar-brand">  Tapsibog Inventory System</a>
 
       <ul class="nav navbar-nav navbar-right">        
-
-      	<li id="navDashboard"><a href="index.php"><i class="glyphicon glyphicon-list-alt"></i>  Dashboard</a></li>        
+            <a class="navbar-brand" href="#">
         
-        <li id="navBrand"><a href="brand.php"><i class="glyphicon glyphicon-btc"></i>  Raw Items</a></li>        
+      </a>
 
-        <li id="navCategories"><a href="categories.php"> <i class="glyphicon glyphicon-th-list"></i> Category</a></li>        
+      	<li id="navDashboard"><a href="index.php"><i class="glyphicon glyphicon-list-alt"></i>  Home</a></li>        
+        
+        <li id="navBrand"><a href="brand.php"><i class="glyphicon glyphicon-apple"></i>  Item Descriptions</a></li>        
 
-        <li id="navProduct"><a href="product.php"> <i class="glyphicon glyphicon-ruble"></i> Products   </a></li>     
+        <li id="navCategories"><a href="categories.php"> <i class="glyphicon glyphicon-menu-hamburger"></i> Category</a></li>        
+
+        <li id="navProduct"><a href="product.php"> <i class="glyphicon glyphicon-cutlery"></i> Products   </a></li>     
 
         <li class="dropdown" id="navOrder">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="glyphicon glyphicon-shopping-cart"></i> Orders <span class="caret"></span></a>

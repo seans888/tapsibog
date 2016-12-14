@@ -49,17 +49,22 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
+       <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Logo" src="C:\Users\owen\Documents\tapsibog\topsibog\Application\advanced\stocks\productpic\taplogo.png">
+      </a>
+    </div>    
 <a class="navbar-brand" align="left">Tapsibog Inventory System</a>
 
       <ul class="nav navbar-nav navbar-right">        
-      	<li id="navDashboard"><a href="index.php"><i class="glyphicon glyphicon-list-alt"></i>  Dashboard</a></li>        
+      	<li id="navDashboard"><a href="index.php"><i class="glyphicon glyphicon-list-alt"></i>  Home</a></li>        
         
         <li id="navBrand"><a href="brand.php"><i class="glyphicon glyphicon-apple"></i> Item Descriptions</a></li>        
 
         <li id="navCategories"><a href="categories.php"> <i class="glyphicon glyphicon-menu-hamburger"></i> Category</a></li>        
 
-        <li id="navProduct"><a href="product.php"> <i class="glyphicon glyphicon-cutlery"></i> Product </a></li>     
+        <li id="navProduct"><a href="product.php"> <i class="glyphicon glyphicon-ruble"></i> Product </a></li>     
 
         <li class="dropdown" id="navOrder">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="glyphicon glyphicon-shopping-cart"></i> Orders <span class="caret"></span></a>

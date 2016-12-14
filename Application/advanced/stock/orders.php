@@ -76,9 +76,9 @@ if($_GET['o'] == 'add') {
 			    </div>
 			  </div> <!--/form-group-->
 			  <div class="form-group">
-			    <label for="clientContact" class="col-sm-2 control-label">Client Contact</label>
+			    <label for="clientContact" class="col-sm-2 control-label">Client Number</label>
 			    <div class="col-sm-10">
-			      <input type="text" class="form-control" id="clientContact" name="clientContact" placeholder="Contact Number" autocomplete="off" />
+			      <input type="text" class="form-control" id="clientContact" name="clientContact" placeholder="Customer Number" autocomplete="off" />
 			    </div>
 			  </div> <!--/form-group-->			  
 
@@ -86,7 +86,7 @@ if($_GET['o'] == 'add') {
 			  	<thead>
 			  		<tr>			  			
 			  			<th style="width:40%;">Product</th>
-			  			<th style="width:20%;">Rate</th>
+			  			<th style="width:20%;">Price</th>
 			  			<th style="width:15%;">Quantity</th>			  			
 			  			<th style="width:15%;">Total</th>			  			
 			  			<th style="width:10%;"></th>
@@ -95,7 +95,7 @@ if($_GET['o'] == 'add') {
 			  	<tbody>
 			  		<?php
 			  		$arrayNumber = 0;
-			  		for($x = 1; $x < 4; $x++) { ?>
+			  		for($x = 1; $x < 2; $x++) { ?>
 			  			<tr id="row<?php echo $x; ?>" class="<?php echo $arrayNumber; ?>">			  				
 			  				<td style="margin-left:20px;">
 			  					<div class="form-group">
@@ -114,6 +114,7 @@ if($_GET['o'] == 'add') {
 		  						</select>
 			  					</div>
 			  				</td>
+			  				
 			  				<td style="padding-left:20px;">			  					
 			  					<input type="text" name="rate[]" id="rate<?php echo $x; ?>" autocomplete="off" disabled="true" class="form-control" />			  					
 			  					<input type="hidden" name="rateValue[]" id="rateValue<?php echo $x; ?>" autocomplete="off" class="form-control" />			  					
@@ -194,10 +195,8 @@ if($_GET['o'] == 'add') {
 				    <label for="clientContact" class="col-sm-3 control-label">Payment Type</label>
 				    <div class="col-sm-9">
 				      <select class="form-control" name="paymentType" id="paymentType">
-				      	<option value="">~~SELECT~~</option>
-				      	<option value="1">Cheque</option>
+				
 				      	<option value="2">Cash</option>
-				      	<option value="3">Credit Card</option>
 				      </select>
 				    </div>
 				  </div> <!--/form-group-->							  
@@ -205,10 +204,7 @@ if($_GET['o'] == 'add') {
 				    <label for="clientContact" class="col-sm-3 control-label">Payment Status</label>
 				    <div class="col-sm-9">
 				      <select class="form-control" name="paymentStatus" id="paymentStatus">
-				      	<option value="">~~SELECT~~</option>
 				      	<option value="1">Full Payment</option>
-				      	<option value="2">Advance Payment</option>
-				      	<option value="3">No Payment</option>
 				      </select>
 				    </div>
 				  </div> <!--/form-group-->							  
@@ -237,7 +233,7 @@ if($_GET['o'] == 'add') {
 						<th>#</th>
 						<th>Order Date</th>
 						<th>Client Name</th>
-						<th>Contact</th>
+						<th>Number</th>
 						<th>Total Order Item</th>
 						<th>Payment Status</th>
 						<th>Option</th>
@@ -277,7 +273,7 @@ if($_GET['o'] == 'add') {
 			    </div>
 			  </div> <!--/form-group-->
 			  <div class="form-group">
-			    <label for="clientContact" class="col-sm-2 control-label">Client Contact</label>
+			    <label for="clientContact" class="col-sm-2 control-label">Client Number</label>
 			    <div class="col-sm-10">
 			      <input type="text" class="form-control" id="clientContact" name="clientContact" placeholder="Contact Number" autocomplete="off" value="<?php echo $data[3] ?>" />
 			    </div>
@@ -287,7 +283,7 @@ if($_GET['o'] == 'add') {
 			  	<thead>
 			  		<tr>			  			
 			  			<th style="width:40%;">Product</th>
-			  			<th style="width:20%;">Rate</th>
+			  			<th style="width:20%;">Price</th>
 			  			<th style="width:15%;">Quantity</th>			  			
 			  			<th style="width:15%;">Total</th>			  			
 			  			<th style="width:10%;"></th>
@@ -366,7 +362,7 @@ if($_GET['o'] == 'add') {
 				    </div>
 				  </div> <!--/form-group-->			  
 				  <div class="form-group">
-				    <label for="vat" class="col-sm-3 control-label">VAT 12%</label>
+				    <label for="vat" class="col-sm-3 control-label">VAT 13%</label>
 				    <div class="col-sm-9">
 				      <input type="text" class="form-control" id="vat" name="vat" disabled="true" value="<?php echo $data[5] ?>"  />
 				      <input type="hidden" class="form-control" id="vatValue" name="vatValue" value="<?php echo $data[5] ?>"  />
